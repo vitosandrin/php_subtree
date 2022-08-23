@@ -57,6 +57,9 @@
                     case "listar":
                         include("listar-usuario.php");
                         break;
+                    case "editar":
+                        include("editar-usuario.php");
+                        break;
                     default:
                         print "<h1>Home</h1>";
                 }
