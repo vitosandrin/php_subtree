@@ -44,8 +44,8 @@ switch ($_REQUEST["acao"]) {
         break;
 
     case 'excluir':
-        $sql = "DELETE FROM usuarios WHERE id=" . $_REQUEST["id"];
 
+        $sql = "DELETE FROM usuarios WHERE id=".$_REQUEST["id"];
         $res = $conn->query($sql);
 
         if ($res == true) {
