@@ -46,19 +46,19 @@
 
                 switch (@$_REQUEST["page"]) {
                     case "login":
-                        include("login.php");
+                        include("./pages/login.php");
                         break;
                     case "novo":
-                        include("novo-usuario.php");
+                        include("./pages/novo-usuario.php");
                         break;
                     case "salvar":
-                        include("salvar-usuario.php");
+                        include("./features/salvar-usuario.php");
                         break;
                     case "listar":
-                        include("listar-usuario.php");
+                        include("./pages/listar-usuario.php");
                         break;
                     case "editar":
-                        include("editar-usuario.php");
+                        include("./pages/editar-usuario.php");
                         break;
                     default:
                         print "<h1>Home</h1>";

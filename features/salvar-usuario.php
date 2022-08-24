@@ -44,9 +44,10 @@ switch ($_REQUEST["acao"]) {
         break;
 
     case 'excluir':
-
-        $sql = "DELETE FROM usuarios WHERE id=".$_REQUEST["id"];
-        $res = $conn->query($sql);
+        if (isset($_GET["id"])) {
+            $sql = "DELETE FROM usuarios WHERE id=" . $_REQUEST["id"];
+            $res = $conn->query($sql);
+        }
 
         if ($res == true) {
             print "<script>alert('Excluído com sucesso')</script>";

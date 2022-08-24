@@ -4,5 +4,5 @@
     define('PASS', '');
     define('BASE', 'crud');
 
-    $conn = new MySQLi(HOST, USER, PASS, BASE);
+    $conn = new mysqli(HOST, USER, PASS, BASE);
 ?>
